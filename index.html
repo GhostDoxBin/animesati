@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Watching Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Anime List</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#" onclick="signIn()">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to Anime Watching Site</h1>
+            <p>Discover and watch your favorite anime series.</p>
+            <button>Start Watching</button>
+        </section>
+
+        <section id="search">
+            <input type="text" id="search-input" placeholder="Search anime...">
+            <button id="search-button">Search</button>
+        </section>
+
+        <section id="featured">
+            <h2>Featured Anime</h2>
+            <div class="anime-grid">
+                <!-- Anime cards will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Anime Watching Site. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
